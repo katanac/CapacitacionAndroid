@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "787857147789",
+    "project_id": "capacitacion-it-7c9a7",
+    "storage_bucket": "capacitacion-it-7c9a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787857147789:android:b98c42c712dc2e77431fc4",
+        "android_client_info": {
+          "package_name": "com.infotrack.capacitacionandroidit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787857147789-pujf804d40j9od05pghaf4i81rgu8f96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACW-pRKOw4gSNsLlUcIoIniO0hI_7qegU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787857147789-pujf804d40j9od05pghaf4i81rgu8f96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

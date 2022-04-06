@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dimend_4dp"
+    app:cardElevation="@dimen/dimend_padding_5dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/dimend_3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexDirection="row">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="70%">
+
+
+                <TextView
+                    android:id="@+id/tv_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/tv_cancion"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic"
+                    android:textAllCaps="true"/>
+
+
+                <!--Nombre Artista-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_artista"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/tv_artista"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_nombre_artista"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/dimend_4dp"
+                        android:layout_marginEnd="@dimen/dimend_4dp"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <!--Nombre Album-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_album"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/tv_album"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_nombre_album"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/dimend_4dp"
+                        android:layout_marginEnd="@dimen/dimend_4dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="30%"
+                android:layout_margin="@dimen/dimend_4dp">
+
+
+                <ImageView
+                    android:id="@+id/img_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimmend_8dp"
+                    android:contentDescription="@string/imgen_1"
+                    android:src="@drawable/guitarr_24dp"
+                    android:visibility="gone"
+                    app:layout_flexBasisPercent="33%"
+                    app:tint="@color/blue_gray_900"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_folk_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimmend_8dp"
+                    android:contentDescription="@string/imgen_2"
+                    android:src="@drawable/boat_viking_24dp"
+                    android:visibility="gone"
+                    app:layout_flexBasisPercent="33%"
+                    app:tint="@color/brown_900" />
+
+
+                <ImageView
+                    android:id="@+id/img_alternativo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimmend_8dp"
+                    android:contentDescription="@string/imgen_3"
+                    android:src="@drawable/headphones_24dp"
+                    android:visibility="gone"
+                    app:layout_flexBasisPercent="33%"
+                    app:tint="@color/deep_orange_900" />
+            </com.google.android.flexbox.FlexboxLayout>
+
+
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:flexDirection="row">
+
+            <ImageButton
+                android:id="@+id/btn_editar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimend_padding_10dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/imgen_1"
+                android:src="@drawable/ic_baseline_edit_24"
+                app:tint="@color/blue_900"
+                app:layout_flexBasisPercent="50%"/>
+
+
+            <ImageButton
+                android:id="@+id/btn_eliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimend_padding_10dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/imgen_2"
+                android:src="@drawable/ic_baseline_delete_24"
+                app:tint="@color/red_900"
+                app:layout_flexBasisPercent="50%"/>
+
+            </com.google.android.flexbox.FlexboxLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

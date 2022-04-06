@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_400">#858383</color>
+    <color name="dark_800">#212121</color>
+    <color name="dark_900">#424242</color>
+    <color name="teal_200">#7E7A6D</color>
+    <color name="teal_700">#4C473F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="brown_900">#3E2723</color>
+    <color name="blue_gray_900">#263238</color>
+    <color name="deep_orange_900">#BF360C</color>
+
+    <color name="red_900">#B71C1C</color>
+    <color name="blue_900">#01579B</color>
+
+
+
+
+
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="BaseTextInputText" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dimend_padding_20dp</item>
+        <item name="android:paddingStart">@dimen/dimend_padding_16dp</item>
+        <item name="android:paddingEnd">@dimen/dimend_padding_16dp</item>
+    </style>
+
+
+    <style name="BaseRadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/dimend_padding_5dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimend_padding_5dp</item>
+    </style>
+
+</resources>

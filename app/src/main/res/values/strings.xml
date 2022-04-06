@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Capacitacion It</string>
+    <string name="titulo_registro_de_canciones">Registro de Canciones</string>
+    <string name="titulo_edicion_de_canciones">Edición de Canciones</string>
+    <string name="nombre_cancion">Nombre Cancion</string>
+    <string name="nombre_artista">Nombre Artista</string>
+    <string name="cont_descripcion_imagen">esta imagen hace referencia a los simpson cantando</string>
+    <string name="registro">Registro</string>
+    <string name="album">Album</string>
+    <string name="metal">Metal</string>
+    <string name="alternativo">Alternativo</string>
+    <string name="folk_metal">Folk Metal</string>
+    <string name="tv_cancion">Nombre Cancion</string>
+    <string name="tv_artista">Artista:</string>
+    <string name="tv_album">Album:</string>
+    <string name="imgen_1">imgen 1</string>
+    <string name="imgen_2">imgen 2</string>
+    <string name="imgen_3">imgen 2</string>
+</resources>

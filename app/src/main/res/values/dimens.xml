@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimend_padding_5dp">5dp</dimen>
+    <dimen name="dimend_padding_10dp">10dp</dimen>
+    <dimen name="dimend_padding_16dp">16dp</dimen>
+    <dimen name="dimend_padding_20dp">20dp</dimen>
+    <dimen name="dimend_padding_25dp">25dp</dimen>
+    <dimen name="dimend_text_20sp">20sp</dimen>
+    <dimen name="dimend_img_150dp">150dp</dimen>
+    <dimen name="dimmend_8dp">8dp</dimen>
+    <dimen name="dimend_4dp">4dp</dimen>
+    <dimen name="dimend_3dp">3dp</dimen>
+
+</resources>

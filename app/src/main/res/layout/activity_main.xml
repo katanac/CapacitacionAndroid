@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".componentes.crudcanciones.CrudActividad">
+
+
+        <ImageView
+            android:id="@+id/ImgVista"
+            android:layout_width="@dimen/dimend_img_150dp"
+            android:layout_height="@dimen/dimend_img_150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimend_padding_16dp"
+            android:layout_marginBottom="@dimen/dimend_padding_16dp"
+            android:src="@drawable/marge"
+            android:contentDescription="@string/cont_descripcion_imagen" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/BaseTextInputText"
+            android:hint="@string/nombre_cancion"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_cancion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/BaseTextInputText"
+            android:hint="@string/nombre_artista"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_artista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_genero_musica"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimend_padding_5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_folk_metal"
+                style="@style/BaseRadioButton"
+                android:text="@string/folk_metal" />
+
+            <RadioButton
+                android:id="@+id/rb_alternative"
+                style="@style/BaseRadioButton"
+                android:text="@string/alternativo" />
+
+            <RadioButton
+                android:id="@+id/rb_metal"
+                style="@style/BaseRadioButton"
+                android:text="@string/metal" />
+
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/BaseTextInputText"
+            android:hint="@string/album"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_album"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/registro"
+            android:backgroundTint="@color/dark_800"/>
+
+</LinearLayout>
