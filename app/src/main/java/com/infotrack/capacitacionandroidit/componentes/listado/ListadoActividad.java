@@ -1,6 +1,8 @@
 package com.infotrack.capacitacionandroidit.componentes.listado;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -43,9 +45,16 @@ public class ListadoActividad extends AppCompatActivity implements ListadoAdapta
         this.firebase = new OrigenDatosFirebase("Musica");
         this.referencia = firebase.obtenerReferencia();
         this.listaCanciones = new LinkedList<>();
-
     }
     //endregion
+
+
+    //region Intencion
+    public static Intent obtenerIntencion(Context context) {
+        return new Intent(context, ListadoActividad.class);
+    }
+    //endregion
+
 
     //region Sobrecargas
     @Override
@@ -79,7 +88,7 @@ public class ListadoActividad extends AppCompatActivity implements ListadoAdapta
 
 
     private void navegarEdicionCanciones(int posicion) {
-        getApplicationContext().startActivity(CrudActividad.obtenerIntencion(getApplicationContext(), TipoCrudEnum.EDICION,listaCanciones.get(posicion)));
+        getApplicationContext().startActivity(CrudActividad.obtenerIntencion(getApplicationContext(), TipoCrudEnum.EDICION, listaCanciones.get(posicion)));
     }
 
 

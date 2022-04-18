@@ -27,6 +27,8 @@ import com.infotrack.capacitacionandroidit.modelos.Cancion;
 import com.infotrack.capacitacionandroidit.traversales.enumeradores.TipoCrudEnum;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CrudActividad extends AppCompatActivity implements CrudCallback {
 
@@ -141,14 +143,6 @@ public class CrudActividad extends AppCompatActivity implements CrudCallback {
         return cancionAgregada;
     }
 
-    private void limpiarDatos() {
-        edNombreAlbum.setText("");
-        edNombreArtista.setText("");
-        edNombreCancion.setText("");
-        rbMetal.setChecked(false);
-        rbFolkMetal.setChecked(false);
-        rbAlternativo.setChecked(false);
-    }
 
     private boolean validarDatosCancion() {
         boolean validado = true;
@@ -172,7 +166,6 @@ public class CrudActividad extends AppCompatActivity implements CrudCallback {
     }
     //endregion
 
-
     //region CallBack
     @Override
     public void registrarCancion() {
@@ -187,7 +180,17 @@ public class CrudActividad extends AppCompatActivity implements CrudCallback {
 
     @Override
     public void editarCancion() {
-        Toast.makeText(getBaseContext(), "edicion", Toast.LENGTH_SHORT).show();
+        if (validarDatosCancion()) {
+            this.referencia.child("Canciones").child(this.cancion.getIdCancion()).updateChildren(obtenerPropiedadesEditar())
+            .addOnSuccessListener(listenerPersistenciaDatos);
+        } else
+            Toast.makeText(getBaseContext(), "Por favor valide los campos de nombre y artista", Toast.LENGTH_SHORT).show();
+    }
+
+    private HashMap<String, Object> obtenerPropiedadesEditar() {
+        HashMap<String, Object> mapPropiedades = new HashMap<>();
+        mapPropiedades.put("nombreArtista", obtenerinfomacionEditText(edNombreArtista));
+        return mapPropiedades;
     }
     //endregion
 
